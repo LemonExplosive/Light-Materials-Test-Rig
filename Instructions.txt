@@ -1,0 +1,17 @@
+Calibration:
+	in velocity.txt type "calibrate" this will tell the device to enter calibration mode.
+	when in calibration mode the device will raise the movable member to its max height.
+	the device will begin to gather an unloaded data sample.
+	after the device will prompt the user to load a mass sample, after pressing the test button the device will gather load data
+	if multiple calibrations are needed then remove the mass and press the test button to run another calibration
+
+General Use:
+	when starting up the device will zero itself.
+	After the device will enter standby mode, here the user can use the up and down buttons to move the jaws of the
+	device laterally. If the user needs to rezero the device while in standby mode they may press the up and down buttons
+	simultaneously. After test prep is finished press the test button to run the test.
+
+sd card:
+	velocity.txt has two purposes, one is to communicate the mode the device should be in(standard or calibraiton), for standard mode the text should
+	be either an integer or float, this will be the velocity in mm/min. if the text entered is "calibrate" then the device will enter calibration mode
+	if the user wishes to enter calibration mode then the user should have the sd card inserted before pressing the test button on startup.
