@@ -147,6 +147,7 @@ try:
     file.close()
     
 except:
+    unmount()
     Recal = 'skip'
 
 if Recal == 'calibrate':
